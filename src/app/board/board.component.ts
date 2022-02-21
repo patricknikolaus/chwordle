@@ -7,14 +7,24 @@ import { words } from 'src/environments';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
-  public answer!: string[];
-  public words = words;
+  public word!: string[];
   constructor() { }
 
   ngOnInit(): void {
-    let i = Math.floor(Math.random() * this.words.length)
-    this.answer = this.words[i].toUpperCase().split('');
-    console.log(this.answer)
+    this.word = [];
+
   }
 
+  addLetter(char: string) {
+    this.word.push(char);
+    console.log(this.word);
+  }
+
+  removeLetter() {
+    this.word.pop();
+  }
+
+  clearWord() {
+    this.word = [];
+  }
 }

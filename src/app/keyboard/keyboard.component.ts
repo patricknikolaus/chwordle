@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { keys } from 'src/environments'
 
 @Component({
   selector: 'app-keyboard',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./keyboard.component.scss']
 })
 export class KeyboardComponent implements OnInit {
-
+  public row1 = keys.row1;
+  public row2 = keys.row2;
+  public row3 = keys.row3;
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
+  passValue(char: String) {
+    console.log(char);
+  }
 }

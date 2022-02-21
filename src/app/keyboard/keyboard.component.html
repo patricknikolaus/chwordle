@@ -1,1 +1,21 @@
-<p>keyboard works!</p>
+<div class="container">
+  <div *ngFor="let key of row1" class="row">
+    <button (click)="passValue(key)" class="key">{{ key }}</button>
+  </div>
+</div>
+<div class="container">
+  <div class="filler"></div>
+  <div *ngFor="let key of row2" class="row">
+    <button (click)="passValue(key)" class="key">{{ key }}</button>
+  </div>
+  <div class="filler"></div>
+</div>
+<div class="container">
+  <div class="filler"></div>
+  <button class="key">Enter</button>
+  <div *ngFor="let key of row3" class="row">
+    <button (click)="passValue(key)" class="key">{{ key }}</button>
+  </div>
+  <button class="key">Delete</button>
+  <div class="filler"></div>
+</div>

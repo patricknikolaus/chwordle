@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./square.component.scss']
 })
 export class SquareComponent implements OnInit {
-
+  public value!: String;
   constructor() { }
 
   ngOnInit(): void {

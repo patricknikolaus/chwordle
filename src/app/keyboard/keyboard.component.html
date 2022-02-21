@@ -11,11 +11,9 @@
   <div class="filler"></div>
 </div>
 <div class="container">
-  <div class="filler"></div>
-  <button class="key" (click)="enter()">Enter</button>
+  <button class="wide-btn" (click)="enter()">Ent</button>
   <div *ngFor="let key of row3" class="row">
     <button (click)="passValue(key)" class="key">{{ key }}</button>
   </div>
-  <button class="key" (click)="delete()">Delete</button>
-  <div class="filler"></div>
+  <button class="wide-btn" (click)="delete()">Del</button>
 </div>

@@ -12,10 +12,10 @@
 </div>
 <div class="container">
   <div class="filler"></div>
-  <button class="key">Enter</button>
+  <button class="key" (click)="enter()">Enter</button>
   <div *ngFor="let key of row3" class="row">
     <button (click)="passValue(key)" class="key">{{ key }}</button>
   </div>
-  <button class="key">Delete</button>
+  <button class="key" (click)="delete()">Delete</button>
   <div class="filler"></div>
 </div>

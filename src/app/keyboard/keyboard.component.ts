@@ -10,13 +10,22 @@ export class KeyboardComponent implements OnInit {
   public row1 = keys.row1;
   public row2 = keys.row2;
   public row3 = keys.row3;
+  public guess!: string[];
   constructor() { }
 
   ngOnInit(): void {
+    this.guess = [];
+  }
+
+  passValue(char: string) {
+    this.guess.push(char)
+  }
+
+  enter() {
 
   }
 
-  passValue(char: String) {
-    console.log(char);
+  delete() {
+    this.guess.pop();
   }
 }
